@@ -1,0 +1,16 @@
+{
+  "name": "ib2",
+  "version": "1.0.0",
+  "description": "instagramBot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "suppandi",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "selenium-webdriver": "^4.22.0"
+  }
+}

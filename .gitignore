@@ -1,0 +1,7 @@
+./node_modules
+./credDri
+node_modules/*
+/node_modules/
+/node_modules
+
+
