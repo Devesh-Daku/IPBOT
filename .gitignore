@@ -4,4 +4,6 @@ node_modules/*
 /node_modules/
 /node_modules
 
+credDri/credentials.json
 
+./credDir/credentials.json
