@@ -2,5 +2,9 @@
 credDir/credentials.json
 src/Assets/Downloads/*
 src/Assets/Posted/*
+<<<<<<< HEAD
 /src/Assets/Posted/*
 .env
+=======
+/src/Assets/Posted/*
+>>>>>>> f477999 (resetted Cloud branch)
