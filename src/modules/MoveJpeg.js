@@ -8,8 +8,8 @@ async function moveJpeg(jpegPath){
     await console.log('\tStarting File Moving Execution');
     try{
         const destinationDriPath = posted;
-        const destinationPath = path.join(destinationDriPath,path.basename(jpegPath))
-        fs.rename(jpegPath , destinationPath,(err)=>{
+        const destinationPath = await path.join(destinationDriPath,path.basename(jpegPath))
+        await fs.rename(jpegPath , destinationPath,(err)=>{
             if(err) throw err;
             console.log('Files moved to Posted Directory');
         })

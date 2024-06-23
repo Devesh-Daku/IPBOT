@@ -3,6 +3,7 @@ const { Builder, By, until } = require('selenium-webdriver');
 const urlPin1 = 'https://www.pinterest.co.uk/';
 
 
+
 class Pinterest{
     constructor(browser , username){
         this.browser = browser;
@@ -42,16 +43,16 @@ class Pinterest{
         await console.log(`\tdownloading the pin with url ${currentURL}`);
         await this.pinDropDownMenu()
         const downloadbtn = await this.browser.wait(until.elementLocated(By.id('pin-action-dropdown-item-1')));
-        await console.log('\tClicking download Button of pin')
+        await console.log('\tClicking download Button of pin');
+        
         await downloadbtn.click();
         await this.witingTillDownloadComplete();
+        return currentURL ;
     }
     async witingTillDownloadComplete(){
         //todo
         await console.log('\tdownload completed');
     }
-    
-
 }
 
 module.exports = Pinterest;

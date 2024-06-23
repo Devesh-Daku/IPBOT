@@ -1,8 +1,5 @@
-./node_modules
-./credDri
-node_modules/*
-/node_modules/
 /node_modules
 credDir/credentials.json
-./credDir/credentials.json
-*/credentials.json
+src/Assets/Downloads/*
+src/Assets/Posted/*
+/src/Assets/Posted/*
