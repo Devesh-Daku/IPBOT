@@ -39,13 +39,13 @@ class Pinterest{
         await dropDownMenu.click();
     }
     async pinDownload(){
+        await this.pinDropDownMenu()
         const currentURL = await this.browser.getCurrentUrl();
         await console.log(`\tdownloading the pin with url ${currentURL}`);
-        await this.pinDropDownMenu()
         const downloadbtn = await this.browser.wait(until.elementLocated(By.id('pin-action-dropdown-item-1')));
         await console.log('\tClicking download Button of pin');
-        
         await downloadbtn.click();
+        
         await this.witingTillDownloadComplete();
         return currentURL ;
     }

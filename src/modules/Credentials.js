@@ -28,7 +28,7 @@ class getCredentials {
 
             const users = JSON.parse(data).pinterest;
             // console.log(data);
-            const user = users.user2;
+            const user = users.user1;
            
             return {
                 email_id : user.email_id,

@@ -3,3 +3,4 @@ credDir/credentials.json
 src/Assets/Downloads/*
 src/Assets/Posted/*
 /src/Assets/Posted/*
+.env
