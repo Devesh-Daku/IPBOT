@@ -8,6 +8,8 @@ const getCredentials = require('./modules/Credentials')
 const Fire_fox = require('./modules/Firefox');
 const JpegFilePath = require('./modules/JpegFileHandler');
 const moveJpeg = require('./modules/MoveJpeg');
+
+
 async function main() {
   
     const fire_fox = await new Fire_fox();
@@ -18,13 +20,12 @@ async function main() {
         try{
             await pinterest.goingToPinOnBoard(ideaPage,1);
             await pinterest.pinDownload();
-            
         }catch(err){
             console.log("error in printrest part " , err);
         }finally{
+            await pinterest.Logout();
             const jpegPath = await JpegFilePath();
             if(jpegPath){
-                await pinterest.Logout();
                 const instagramLoginPage = await new HomePage(browser , urlInsta);
                 const instagram = await instagramLoginPage.login()
                 try{

@@ -12,7 +12,7 @@ class getCredentials {
 
             const users = JSON.parse(data).instagram;
             // console.log(data);
-            const user = users.user4;
+            const user = users.user1;
            
             return {
                 username : user.username,

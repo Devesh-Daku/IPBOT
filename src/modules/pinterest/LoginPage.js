@@ -17,7 +17,7 @@ class LoginPageP {
         this.email    = await user.email_id;
         this.username = await user.username;
         this.password = await user.password;
-        await console.log('Loging in to the email : ' + this.email); 
+        await console.log('\tLoging in to the email : ' + this.email); 
 
         await this.browser.wait(until.elementLocated(By.xpath('/html/body/div[1]/div/div[1]/div/div[1]/div/div[2]/div[2]/button'))).click();
         await this.browser.wait(until.elementLocated(By.id('email'))).sendKeys(this.email);
